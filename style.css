@@ -381,7 +381,7 @@
     }
     .cardList {
       height: 50em;
-      width: 50em;
+      width: 40em;
     }
     .card {
       height: 10em;
@@ -401,7 +401,7 @@
     }
     /* Modal Image*/
     .modal-img {
-      width: 30em;
+      width: 15em;
     }
     .play-again-btn {
       font-size: 2em;
