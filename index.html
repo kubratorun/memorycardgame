@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,500;1,600&family=Amatic+SC:wght@400;700&family=Fuzzy+Bubbles:wght@400;700&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;1,300&family=Zen+Old+Mincho&display=swap" rel="stylesheet"> 
+  
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Memory Card Game</h1>
+    </header>
+
+    <!--Start modal section-->
+    <section class="start-game-modal">
+      <div id="start-modal" class="wincontainer">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <h2>Welcome!</h2>
+          <p>Choose the game mode</p>
+          <div class="modal-content-options">
+            <button class="btn play-again-btn" id="easyGame">Easy</button>
+            <button class="btn play-again-btn" id="mediumGame">Medium</button>
+            <button class="btn play-again-btn" id="hardGame">Hard</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal section-->
+
+    <section class="win-game-modal">
+      <section class="score-panel">
+        <div class="timer-container">⏱ <span class="timer">00:00</span></div>
+        <ul id="star-rating" class="star-rating">
+          <li class="star"><i class="fa fa-star fa-lg"></i></li>
+          <li class="star"><i class="fa fa-star fa-lg"></i></li>
+          <li class="star"><i class="fa fa-star fa-lg"></i></li>
+        </ul>
+        <span>
+          <span class="moves-counter">0</span>
+          Flips
+        </span>
+        <button class="btn reset-btn">
+          <i class="fa fa-repeat">Reset</i>
+        </button>
+      </section>
+
+      <div id="wincontainer" class="wincontainer win">
+        <!-- Modal content -->
+        <div class="modal-content" id="win-modal-content">
+          <div id="modal-details">
+            <span class="close">&times;</span>
+            <h2>Congratulations!</h2>
+            <p>You have won the game and found all pairs of cards.</p>
+            <img class="modal-img" src="img/ninja1.jpeg" alt="" />
+            <button class="btn play-again-btn" id="play-again">
+              Play Again?
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <ul class="cardList"></ul>
+    <h4>
+      Made by
+        &copy; Kubra </a>
+    </h4>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
